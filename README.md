@@ -106,7 +106,7 @@ comments
 `php artisan db:seed` 
 
 #### usuarios de teste o ver en database/seeders/UserTable.php
-````conf
+```conf
 email=nikoz@gmail.com 123456
 password=123456
 email=vasquez@gmail.com
