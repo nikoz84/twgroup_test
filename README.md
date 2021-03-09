@@ -47,6 +47,7 @@ public function comments()
 }
 ```
 
+
 ## Desafío 3:
 Imaginando los modelos anteriormente mencionados, crea una Query en Eloquent (Obligatorio) que obtenga: Todas las publicaciones que contengan comentarios con la palabra "Hola" en su contenido, y que además posean status "APROBADO".
 
@@ -56,6 +57,29 @@ $publication = Publication::with(['comments' => function($q){
         ->where('content', 'LIKE', "%Hola%");
 }])->paginator(15);
 ```
+
+
+O se puede crear un scopo para tener ese mismo resultado:
+
+```php
+public function scopeSearchByTerm($query, $term)
+{
+    if (!$query) {
+        return;
+    }
+    return $query->where('content', 'like', "%?%", $term)
+        ->where('status', 'APROVADO');
+}
+```
+
+En nuestro controlador podemos accesar:
+```php
+$commnent = new Comment;
+
+$comment->searchByTerm($term);
+
+```
+
 
 ## Desafío 4:
 En Laravel existen las migraciones, en base a tu experiencia ¿Cuáles son las ventajas que nos entrega el uso de migraciones en una aplicación Laravel funcionando en un servidor de producción?
