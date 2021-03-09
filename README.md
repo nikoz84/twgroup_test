@@ -86,7 +86,7 @@ En Laravel existen las migraciones, en base a tu experiencia ¿Cuáles son las v
 
 ### Respuesta:
  
->Permite tener un control de version de la base de datos por ejemplo nos permite crear, modificar o deshacer cambios en las tablas. Con los comandos (php artisan migrate :rollback :refresh) podemos ingresar via SSH en el servidor de producción y hacer los cambios correspondientes en la base de datos en vez de hacerlo por via de comando para cargar un script o algún cliente de bases de datos. Tambien podemos crear el archivo de dump del `Schema` con el comando `php artisan schema:dump` que lo guarda em database/schema. Otra ventaja importante es que usamos diferentes archivos y no solo uno que es más difícil de mantener.
+>Permite tener un control de version de la base de datos por ejemplo nos permite crear, modificar o deshacer cambios en las tablas. Con los comandos (php artisan migrate :rollback :refresh) podemos ingresar via SSH en el servidor de producción y hacer los cambios correspondientes en la base de datos asi no cargamos el script en algún cliente. También podemos crear el archivo de dump del `Schema` con el comando `php artisan schema:dump` que lo guarda em database/schema. Otra ventaja importante es que usamos diferentes archivos y no solo uno que es más difícil de mantener.
 
 ## Desafío 5:
 
