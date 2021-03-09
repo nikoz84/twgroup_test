@@ -86,7 +86,7 @@ En Laravel existen las migraciones, en base a tu experiencia ¿Cuáles son las v
 
 ### Respuesta:
  
->Permite tener un control de version de la base de datos por ejemplo nos permite crear, monificar o deshacer cambios en las tablas. Con los comandos (php artisan migrate :rollback :refresh) podemos ingresar via SSH en el servidor de producción y hacer los cambios correspondientes en la base de datos en vez de hacerlo por via de comando para cargar un script o algún cliente.
+>Permite tener un control de version de la base de datos por ejemplo nos permite crear, modificar o deshacer cambios en las tablas. Con los comandos (php artisan migrate :rollback :refresh) podemos ingresar via SSH en el servidor de producción y hacer los cambios correspondientes en la base de datos en vez de hacerlo por via de comando para cargar un script o algún cliente.
 
 ## Desafío 5:
 
