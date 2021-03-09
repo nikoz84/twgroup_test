@@ -98,8 +98,20 @@ users
 publications
 comments
 
-`php artisan migrate` Crear la estructura de datos
-`php artisan db:seed` Para popular con datos de test
+
+### Crear la estructura de datos
+`php artisan migrate` 
+
+### Para popular con datos de test
+`php artisan db:seed` 
+
+#### usuarios de teste o ver en database/seeders/UserTable.php
+````conf
+email=nikoz@gmail.com 123456
+password=123456
+email=vasquez@gmail.com
+password=123456
+``` 
 
 La petición es:
 Realiza un CRUD, utiliza Bootstrap y en las vistas el uso de Layouts en Blade.
