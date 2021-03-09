@@ -84,9 +84,9 @@ $comment->searchByTerm($term);
 ## Desafío 4:
 En Laravel existen las migraciones, en base a tu experiencia ¿Cuáles son las ventajas que nos entrega el uso de migraciones en una aplicación Laravel funcionando en un servidor de producción?
 
-Respuesta: Permite tener un control de version de la base de datos por ejemplo nos permite crear, monificar o deshacer cambios en las tablas. Con los comandos (php artisan migrate :rollback :refresh) podemos ingresar via SSH en el servidor de producción y hacer los cambios correspondientes en la
-base de datos en vez de hacerlo por via de comando para cargar un script o algún cliente.
-
+### Respuesta:
+ 
+>Permite tener un control de version de la base de datos por ejemplo nos permite crear, monificar o deshacer cambios en las tablas. Con los comandos (php artisan migrate :rollback :refresh) podemos ingresar via SSH en el servidor de producción y hacer los cambios correspondientes en la base de datos en vez de hacerlo por via de comando para cargar un script o algún cliente.
 
 ## Desafío 5:
 
