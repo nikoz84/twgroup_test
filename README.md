@@ -8,6 +8,8 @@ Al momento de iniciar un nuevo proyecto en Laravel debemos realizar una serie de
 En el archivo .env creado modificar los datos de acceso a los servidores redis, smpt y mysql
 
 ```conf
+APP_NAME="TWGroup"
+
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
@@ -21,6 +23,7 @@ MAIL_PORT=2525
 MAIL_USERNAME=user
 MAIL_PASSWORD=password
 MAIL_ENCRYPTION=tls
+MAIL_FROM_ADDRESS='from@example.com'
 MAIL_FROM_NAME="${APP_NAME}"
 
 REDIS_HOST=127.0.0.1
@@ -71,7 +74,8 @@ users
 publications
 comments
 
-`php artisan migrate`
+`php artisan migrate` Crear la estructura de datos
+`php artisan db:seed` Para popular con datos de test
 
 La petición es:
 Realiza un CRUD, utiliza Bootstrap y en las vistas el uso de Layouts en Blade.
